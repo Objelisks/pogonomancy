@@ -1,0 +1,35 @@
+peer to peer farming game
+
+peer.js
+joy.js
+
+magicksfarm
+spells are grown
+mostly visual particle effect type things
+can combine with cross pollination
+shiny shiny particles
+errywhere
+technomagy
+
+
+classes of things:
+	SEED
+	PLANT
+	MAGIC
+
+
+
+needs:
+	particle system
+	peer to peer connection
+	biological system
+	many effects
+	interactions
+
+
+
+magic effects:
+	push
+	fire
+	frost
+	bubble
