@@ -1,6 +1,8 @@
 Joy.debug = true;
 var engine = new Joy.Engine({canvas2d: document.getElementById('game')});
-var plant = new Flora(250,350);
+var plant = new Flora(200,350);
+var plant2 = new Flora(300,350);
+var plant3 = new Flora(400,350);
 
 engine.createScene(function(scene) {
 	var background = new Joy.Rect({
@@ -12,4 +14,6 @@ engine.createScene(function(scene) {
 	scene.addChild(background);
 
 	scene.addChild(plant);
+	scene.addChild(plant2);
+	scene.addChild(plant3);
 });

@@ -10,6 +10,8 @@ can combine with cross pollination
 shiny shiny particles
 errywhere
 technomagy
+2d platform sideview
+
 
 
 classes of things:
@@ -26,6 +28,13 @@ needs:
 	many effects
 	interactions
 
+stuff I have to write:
+	particle system
+	network communication
+	dna thingy
+	movement
+	interactions
+	collision resolve
 
 
 magic effects:
@@ -33,3 +42,65 @@ magic effects:
 	fire
 	frost
 	bubble
+
+
+PLANT
+	SEED
+	TREE
+		L SYSTEM
+	FLOWER
+	MAGIC
+		DNA
+
+DNA COMBINER
+
+PLAYER
+	BEARD
+	INVENTORY
+
+
+MAGOFLORA DNA SPLICING
+
+differences:
+	shape
+		circle, square, star, fill, line, dot
+	color
+	speed/life
+	variance
+	branching
+		splits,length
+
+hexadecimal dna structure
+16 types of everything
+16 shapes
+	circle fill/line, square fill/line, triangle fill/line
+	star, line, pixel, letter, cross, 
+16 colors
+16 speed levels
+16 branching types
+	straight, left, right, 2 at 45, 3 at 45, spiral left, spiral right, gravity 2 branch, gravity 3 branch, explode (7 branch), 
+
+MAGIC
+levitate = {
+	+blue
+	+speed
+	+up
+	-branch
+	+line
+	effect: {
+		push objects upward
+	}
+}
+
+L SYSTEMS
+get a thing up that renders the system so tweaks can be made
+parametric grammar
+grammar:
+	go straight
+	turn
+	stochasm
+
+structure:
+	trunk
+	stem
+	leaf
