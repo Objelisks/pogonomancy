@@ -11,6 +11,9 @@ var PlayerBehaviour = Joy.Behaviour.extend({
 		if(evt.keyCode == Joy.Keyboard.UP) {
 			this.jump();
 		}
+		if(evt.keyCode == Joy.Keyboard.X) {
+			this.activate();
+		}
 	},
 
 	// each frame
@@ -101,9 +104,15 @@ var Wizard = Joy.DisplayObject.extend({
 		this.ctx.restore();
 	},
 
-	// TODO y u no collide with seeds
 	take: function(thing) {
 		console.log("taking");
 		this.inventory.push(thing);
+	},
+
+	activate: function() {
+		if(this.inventory.length > 0) {
+			var item = this.inventory.pop();
+			this._parent.addChild(item);
+		}
 	}
 });

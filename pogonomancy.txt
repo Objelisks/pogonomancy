@@ -12,7 +12,15 @@ errywhere
 technomagy
 2d platform sideview
 
-
+WIKIPEDIO
+http://en.wikipedia.org/wiki/Plant_improvement
+http://en.wikipedia.org/wiki/Mendelian_inheritance
+http://en.wikipedia.org/wiki/Punnett_square
+http://en.wikipedia.org/wiki/Reverse_genetics
+http://en.wikipedia.org/wiki/Peer_to_peer
+http://en.wikipedia.org/wiki/Fluidic_logic
+http://en.wikipedia.org/wiki/Magnum_opus_(alchemy)
+http://en.wikipedia.org/wiki/Classical_element
 
 classes of things:
 	SEED
@@ -80,6 +88,13 @@ hexadecimal dna structure
 16 branching types
 	straight, left, right, 2 at 45, 3 at 45, spiral left, spiral right, gravity 2 branch, gravity 3 branch, explode (7 branch), 
 
+GENETICS
+	mendelian genetics is a emergent property of the system
+	cross algorithm needs to randomly select one of two alleles
+	plant has two genes for each trait
+	dominant or recessive
+
+
 MAGIC
 levitate = {
 	+blue
@@ -104,3 +119,185 @@ structure:
 	trunk
 	stem
 	leaf
+
+A : BCBCBC
+B : BCBCBC
+C : .
+
+
+
+design perspectiv eon mltiplayer cheat prevention
+asset risk minimization
+save worlds throgh codes, don't tie the world to the player
+what if
+	git protocol for player interaction
+	rollback everything done by just one player
+
+player builds world, gets attached, gets sad when people mess it up.
+
+so
+player host
+you start off in your own world
+you can visit anyone elses wot you can connect to.
+default settings whitelist visitors
+can switch to blacklist mode
+visitors are ghosted
+
+gardens
+
+
+MANIPULATION OF PLANTS
+mostly strange plants, but also anything with direction or parameters
+	ie. color effect
+		rotate some branches and extend some leaves and you change hue, saturation
+
+
+moving seeds between worlds should be difficult
+	requires portal system which is advanced plant
+	purple will be a rare seed
+
+
+majic sistem
+	build out of base elements
+	interesting interactions are combinations of base elements
+	base elements have no interesting interactions except color/visual effects
+
+interesting interactions
+11	weather sun (++heat -clouds)
+12	speed (makes things move faster (under their own control))
+13	weather	storm (+clouds ++rain)
+14	weather	snow (+rain --heat)
+15	push (positive constant force)
+21	sloth (makes things move slower (under their own control))
+22	destruction (removes things from the world)
+23	evaporate (removes water around)
+24  stunt (decreases speed of growth)
+25	fireworks (visual effect)
+31	while loop (turing completeness)
+32	if statement (turing completeness)
+33	water (fills areas below with water)
+34	paint (changes colors of things / TODO color over time)
+35	pump (moves water)
+41	structure ladder (levitate)
+42	growth (increases speed of nearby plants / beard growth)
+43	structure door (waterfall)
+44	genetics (allows insight into genetics of plants)
+45	structure wall (purple because modular and shapable)
+51	pull (negative constant force)
+52	sign (allows communication through symbols or something)
+53	anti (gives a temporary shield against effects)
+54	portal (allows connection btwn worlds)
+55	strange (mysterious effects (maybe reverses other effects))
+
+structure can be shaped through some kind of system
+
+weather control by grouping similar plants
+	bases probably have a room which is a weather engine
+
+water logic
+	water travels simple paths, falls down sides, maybe also down grooves in middle of block
+
+
+bending plants allows you to direct their effects if relevant
+
+base elements
+1	air light gold
+	thin
+	affected by wind more
+2	fire embre brown
+	upwards
+	branching
+3	water flow pulseblue
+	arcs
+	willow
+4	earth stone browngrey
+	roots
+	wide flat leaves
+5	purple purple purple
+	45 deg angles
+	geometric
+
+primary secondary
+opposite effects generally reflect each other
+ 12345
+1abcde
+2fghij
+3klmno
+4pqrst
+5uvwxy
+
+
+25 unique effects
+sub sub effects can be graduated between those
+effect gradation
+
+adding another base gives 11 more effects if needed
+
+
+plants need growth conditions
+different kinds have different conditions
+	water
+	light
+	like plants nearby
+
+
+genetics
+	somebits mendelian
+	no mixing
+	factors (genes)
+
+
+GENETICS
+
+
+
+branching is a whole nother thing
+phenotype based off of genotype
+
+these are all based off of base element combinations
+
+ACTUAL GENETICS
+one allele is a phenotype
+another allele is a phenotype
+combined, only dominent alleles activate on any pair
+
+11 22
+
+11 12
+21 22
+
+
+COOL GENETICS
+
+
+
+
+traits
+per base
+	branch pattern
+	color
+	angle
+	width
+	seedshape
+per other gene
+	strength
+	life
+	size
+
+growth
+	length
+
+var basedna = {
+	start: "X", // meta branching
+	branching: new Object({
+		"X": "F-[[X]+X]+F[+FX]-X", // where on growth to branch
+		"F": "FF" // simulates growing
+	}), // 
+	line: "LINE", // LINE, ARC, RECT
+	angle: 0.21, // amount to spread at each branch
+	color: "#59AA60", // #RRGGBB
+	width: 1.0, // width of line segments
+	depth: 3, // recursive depth
+	length: 5, // length of line segments (lengthen to grow tree)
+	seedShape: "circle" // shape of seeds, maybe make this a polygon for editability
+}
