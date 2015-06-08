@@ -1763,7 +1763,7 @@
 
   // create a master gain node
   if (usingWebAudio) {
-    var gainNode = ctx.createGainNode();
+    var gainNode = ctx.createGain();
     gainNode.gain.value = 1;
     gainNode.connect(ctx.destination);
   }
